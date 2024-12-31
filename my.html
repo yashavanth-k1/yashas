@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yashuportfolio.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="my.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div class="header">
+                <div class="left">Yash.</div>
+                <div class="right">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#project">PROJECTS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="leftcontent">
+                    <h1>Hi, it's me <span>Yashavanth </span><br>From Banglore</h1>
+                </div>
+                <div class="rightcontent">
+                    <img src="image.png" alt="">
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="leftcont">
+                <img src="image.png" alt="">
+            </div>
+            <div class="rightcont">
+                <h1>About me</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illum assumenda
+                    quae mollitia atque inventore quisquam ipsum doloremque facere non,
+                    quo alias voluptates incidunt dolor tempora fuga eum saepe corporis.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Basic web Devolopment</span><br>Designing a Website interface.</li>
+                        <li><span>Basic c-programe</span><br>Programmming basic code by using c language.</li>
+                        <li><span>3D Models</span><br>Desgninga 3D models by using Solidworks.</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>SSLC-2020</span><br>M M D R School, Yallapura.</li>
+                        <li><span>Diploma-2023</span><br>Govt polytechnic, Tumkur.</li>
+                        <li><span>B.E-2024</span><br>RV collage of Engineering, Banglore.</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="hobbies">
+                    <ul>
+                        <li><span>Drawing</span><br>Drawing a simple Drawings.</li>
+                        <li><span>Reading</span><br>Reading Newspaper and Books.</li>
+                        <li><span>Meditation</span><br>Doing meditation for Relaxing Mind.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="project">
+        <div class="containers">
+            <h1 class="sub">My Work</h1>
+            <div class="workt">
+                <div class="work">
+                    <img src="how-to-use-google-form.jpg" alt="">
+                    <div class="layer">
+                        <h3>Complete Google form</h3>
+                        <p>The google form Take the input of the students completely.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ecommerce-design-strategies.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>This website Shows you the complete web of the E-commerce.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="4137_720x540.png" alt="">
+                    <div class="layer">
+                        <h3>Universal joint</h3>
+                        <p>This mechanical aasembly shows the complete Universal jiont.</p>
+                    </div>
+                </div>     
+            </div> <div class="see"><a href="">See More!</a>
+        </div>
+       </div>
+    </div>
+</div>
+    <div id="contact">
+        <div class="contact">
+            <div class="contactl">
+                <h1 class="subt">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>Yashuit41@gmail.com</p>
+                <p><i class="fa-duotone fa-solid fa-phone"></i>7760680594</p>
+                <div class="sicon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#" download class="btn">Download CV</a>
+                <a href="#" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contactr">
+                <form class="form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        Copyright © Yashu. | Made in 2024 with lot's of Smile <i class="fa-solid fa-face-smile"></i>.
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
